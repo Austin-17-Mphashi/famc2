@@ -52,11 +52,7 @@ function Signup() {
   const consulting_eng_ref_phone = useRef();
 
   //GET MEMBERSHIP CATEGORY INPUTS
-  const [fullTimeStudent, setFullTimeStudent] = useState(false);
-  const [engineerNonEsca, setEngineerNonEsca] = useState(false);
-  const [engineerEsca, setEngineerEsca] = useState(false);
-  const [technical, setTechnical] = useState(false);
-  const [retired, setRetired] = useState(false);
+  
   const [selectedStudentCard, setSelectedStudentCard] = useState(null);
 
   ///Signature and Date

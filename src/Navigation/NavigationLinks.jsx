@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { projectFirestore, auth, projectStorage as storage } from "../firebase";
 
 
 
 function NavigationLinks() {
-    const [user] = useAuthState(auth);
+    
     const [navBackground, setNavBackground] = useState(false);
 
   useEffect(() => {

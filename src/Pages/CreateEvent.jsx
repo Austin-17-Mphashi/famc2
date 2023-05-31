@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import { projectFirestore, auth, projectStorage as storage } from "../firebase";
-import firebase from "firebase/compat/app";
+import { projectFirestore, auth} from "../firebase";
 
 import { v4 } from "uuid";
 

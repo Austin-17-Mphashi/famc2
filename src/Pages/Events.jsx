@@ -1,9 +1,8 @@
-import React, { useRef, useState, useEffect } from "react";
-import { projectFirestore, auth, projectStorage as storage } from "../firebase";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import React, { useState, useEffect } from "react";
+import { projectFirestore, auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+
 
 
 function Events() {
