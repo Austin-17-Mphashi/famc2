@@ -6,21 +6,15 @@ import goal from "./HomeStyling/goal.jpg";
 function Home() {
   return (
     <>
-      <section id="intro" class="main style1 dark fullscreen">
+      <section id="intro" class="main style1 dark text-dark fullscreen">
         <div class="content">
           <header>
-            <h2>Hey.</h2>
+            <h1>FAMC.</h1>
           </header>
-          <p>
-            Welcome to <strong>Big Picture</strong> a responsive site template
-            designed by <a href="https://html5up.net">HTML5 UP</a>
-            <br />
-            and released for free under the{" "}
-            <a href="https://html5up.net/license">
-              Creative Commons Attribution license
-            </a>
-            .
-          </p>
+          <h5>
+		  Creating Innovative & Sustainable Engineering & Asset Management Solutions
+           
+          </h5>
           <footer>
             <a href="#one" class="button style2 down">
               More
@@ -32,7 +26,7 @@ function Home() {
       <section id="one" class="main style2 right dark fullscreen">
         <div class="content box style2">
           <header>
-            <h2>What I Do</h2>
+            <h2>What we do</h2>
           </header>
           <p>
             Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore
@@ -49,7 +43,7 @@ function Home() {
       <section id="two" class="main style2 left dark fullscreen">
         <div class="content box style2">
           <header>
-            <h2>Who I Am</h2>
+            <h2>Who we are</h2>
           </header>
           <p>
             Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore
@@ -66,7 +60,7 @@ function Home() {
       <section id="work" class="main style3 primary">
         <div class="content">
           <header>
-            <h2>My Work</h2>
+            <h2>Our Work</h2>
             <p>
               Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore
               condimentum. Fusce blandit ultrices sapien, in accumsan orci
