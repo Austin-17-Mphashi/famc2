@@ -28,7 +28,9 @@ function Navigation() {
           <NavigationLinks />
           <Routes>
             <Route element={<PrivateRoute />}>
-              <Route element={<Home />} path="/" />
+              
+            </Route>
+            <Route element={<Home />} path="/" />
               <Route element={<UserInfo />} path="/profile" />
               <Route element={<UpdateProfile />} path="/update-profile" />
               <Route element={<GetInTouch />} path="/contact" />
@@ -42,7 +44,6 @@ function Navigation() {
               <Route element={<Courses />} path="/courses" />
               <Route element={<Events />} path="/events" />
               <Route element={<Event />} path="/events/:event" />
-            </Route>
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />

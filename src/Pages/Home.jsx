@@ -79,7 +79,7 @@ function Home() {
               <a href="images/fulls/02.jpg" class="image fit">
                 <img src={goal} title="Airchitecture II" alt="" />
               </a>
-            </article>
+            </article> 
             <article class="from-left">
               <a href="images/fulls/03.jpg" class="image fit">
                 <img src={goal} title="Air Lounge" alt="" />
