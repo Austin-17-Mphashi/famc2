@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 
 function Events() {
 
-   const route='events'
+  const route='events'
   const [user] = useAuthState(auth);
 
   const eventsRef = projectFirestore.collection(route);

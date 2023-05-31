@@ -5,7 +5,7 @@ import firebase from "firebase/compat/app";
 import { v4 } from "uuid";
 
 function CreateEvent() {
-
+  
   const route = `events`
   const eventsRef = projectFirestore.collection(route);
 
@@ -15,15 +15,10 @@ function CreateEvent() {
   const [topic, setTopic] = useState("");
   const [audience, setAudience] = useState("");
   const dummy = useRef();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { uid} = auth.currentUser;
-    // Log the form values
-    console.log("Date:", date);
-    console.log("Duration:", duration);
-    console.log("Time:", time);
-    console.log("Topic:", topic);
-    console.log("Audience:", audience);
+    const { uid } = auth.currentUser;
 
     const newEvent = {
         date: date,

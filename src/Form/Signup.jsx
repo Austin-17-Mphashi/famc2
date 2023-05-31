@@ -6,6 +6,7 @@ import firebase from "firebase/compat/app";
 import { projectStorage as storage } from "../firebase";
 
 function Signup() {
+
   const name = useRef();
   const surname = useRef();
   const id_number = useRef();
@@ -468,7 +469,7 @@ function Signup() {
                 />
               </Form.Group>
 
-              <Button disabled={loading} className="w-100" type="submit">
+              <Button disabled={loading} className="w-100 mt-4" type="submit">
                 Sign Up
               </Button>
             </Form>
