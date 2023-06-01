@@ -35,6 +35,7 @@ function Users() {
 
     return () => unsubscribe();
   }, []);
+
   return (
     <div className="mt-5 mb-5">
       <form className="sm-mx-1 m-5 my-1 d-flex">
@@ -49,53 +50,57 @@ function Users() {
           </div>
         </div>
       </form>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Surname</th>
-            <th scope="col">Sex</th>
-            <th scope="col">ID Number</th>
-            <th scope="col">Cellphone</th>
-            <th scope="col">Telephone</th>
-            <th scope="col">Address</th>
-            <th scope="col">Province</th>
-            <th scope="col">City</th>
-            <th scope="col">Code</th>
-            <th scope="col">Qualification</th>
-            <th scope="col">view</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredUsers &&
-            filteredUsers.map((user, index) => (
-              <tr key={index}>
-                <th scope="row">{index + 1}</th>
-                <td>{user.name}</td>
-                <td>{user.surname}</td>
-                <td>{user.sex}</td>
-                <td>{user.id_number}</td>
-                <td>{user.cellphone}</td>
-                <td>{user.telephone}</td>
-                <td>{user.address}</td>
-                <td>{user.province}</td>
-                <td>{user.city}</td>
-                <td>{user.code}</td>
-                <td>{user.qualification}</td>
-                <td className="btn btn-dark">
-                  <Link
-                    to={user.id}
-                    state={{ data: user }}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    view
-                  </Link>
-                </td>
-              </tr>
-            ))}
-        </tbody>
-      </table>
+      
+      <div id="no-more-tables" className="table-responsive">
+        <table  className="table table-dark table-striped table-hover">
+          <thead>
+            <tr>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">#</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Name</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Surname</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Sex</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">ID Number</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Cellphone</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Telephone</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Address</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Province</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">City</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Code</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">Qualification</th>
+              <th className="col-12 col-sm-6 col-md-1" scope="col">View</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredUsers &&
+              filteredUsers.map((user, index) => (
+                <tr key={index}>
+                  <th scope="row">{index + 1}</th>
+                  <td data-title="Name" >{user.name}</td>
+                  <td data-title="Surname">{user.surname}</td>
+                  <td data-title="Sex">{user.sex}</td>
+                  <td data-title="ID">{user.id_number}</td>
+                  <td data-title="Cell phone">{user.cellphone}</td>
+                  <td data-title="Telephone">{user.telephone}</td>
+                  <td data-title="Address">{user.address}</td>
+                  <td data-title="Province">{user.province}</td>
+                  <td data-title="City">{user.city}</td>
+                  <td data-title="Code">{user.code}</td>
+                  <td data-title="Qualification">{user.qualification}</td>
+                  <td data-title="View">
+                    <Link
+                      to={user.id}
+                      state={{ data: user }}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                      className="btn btn-warning"
+                    >
+                      View
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
