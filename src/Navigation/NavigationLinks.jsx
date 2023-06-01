@@ -46,6 +46,9 @@ function NavigationLinks() {
                             <a className="nav-link" href="#"><Link to="/signup" style={{ textDecoration: 'none', color: 'black' }}>Register</Link></a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link" href="#"><Link to="/users" style={{ textDecoration: 'none', color: 'black' }}>Registered users</Link></a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="#"><Link to="/login" style={{ textDecoration: 'none', color: 'black' }}>Login</Link></a>
                         </li>
                         <li className="nav-item">

@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom"
 
 import Home from "../Pages/Home"
 import Signup from "../Form/Signup"
+import Users from "../Pages/Users"
+import User from "../Pages/User"
 import Login from "../Form/Login"
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from "../Form/ForgotPassword"
@@ -40,6 +42,8 @@ function Navigation() {
               <Route element={<Services />} path="/services" />
               <Route element={<BookOnline />} path="/book-online" />
               <Route element={<CreateEvent />} path="/create-events" />
+              <Route element={<Users />} path="/users" />
+              <Route element={<User />} path="/users/:user" />
               <Route element={<Membership />} path="/membership" />
               <Route element={<Courses />} path="/courses" />
               <Route element={<Events />} path="/events" />

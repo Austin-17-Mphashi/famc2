@@ -180,7 +180,7 @@ function Signup() {
   }
 
   return (
-    <div>
+    <div className="my-5">
       <div className="container xs-container-fluid  m-auto mt-5 mb-5">
         <Card>
           <Card.Body>
