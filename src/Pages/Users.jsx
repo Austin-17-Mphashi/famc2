@@ -38,6 +38,7 @@ function Users() {
 
   return (
     <div className="mt-5 mb-5">
+        <h4 className="my-5">Registered users</h4>
       <form className="sm-mx-1 m-5 my-1 d-flex">
         <div className="row sm-mx-1 mt-5 mb-5">
           <div className="col-12">
@@ -72,7 +73,7 @@ function Users() {
           </thead>
           <tbody>
             {filteredUsers &&
-              filteredUsers.map((user, index) => (
+              filteredUsers.sort((a, b) => a.name.localeCompare(b.name)).map((user, index) => (
                 <tr key={index}>
                   <th scope="row">{index + 1}</th>
                   <td data-title="Name" >{user.name}</td>
@@ -93,7 +94,7 @@ function Users() {
                       style={{ textDecoration: "none", color: "inherit" }}
                       className="btn btn-warning"
                     >
-                      View
+                      view
                     </Link>
                   </td>
                 </tr>
